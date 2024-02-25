@@ -1,0 +1,360 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6d9ac4;
+}
+
+/* Signup CSS Start */
+
+.signup_container{
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  margin: 5px 0;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+  background: #6d9ac4;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.deleteBtn {
+    width: 300px;
+    height: 50px;
+    background: white !important;
+    border: 1px solid red;
+    outline: none;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.deleteBtn:hover{
+  background: #28649c !important;
+  color: white;
+  border: none !important;
+}
+
+.button:hover {
+  background: #4f89c0;
+}
+
+.signup_title{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.signup_heading{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: rgb(117, 116, 116);
+}
+
+.login_link{
+  font-size: 18px;
+  margin-top: 10px;
+  color: rgb(117, 116, 116);
+}
+
+.login_link a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #6d9ac4;
+}
+
+.login_link a:hover {
+  color: #4f89c0;
+}
+
+.term_condition{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.forgot{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.forgot p {
+  font-size: 14px;
+  color: rgb(117, 116, 116);
+  cursor: pointer;
+}
+
+.forgot p:hover {
+  color: #367bbb;
+}
+
+.remember-me span {
+  color: #4f89c0;
+}
+
+.term_condition p {
+  font-size: 14px;
+  color: rgb(117, 116, 116);
+}
+
+.term_condition span {
+  color: #4f89c0;
+}
+
+.checkbox{
+  width: 15px;
+  height: 15px;
+}
+
+.divider{
+  border: 1px solid lightgray;
+  position: relative;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.divider p {
+  position: absolute;
+  top: -8px;
+  text-align: center;
+  font-size: 14px;
+  background: white;
+  padding: 0px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.google{
+  margin: 15px 0px;
+  border: 1px solid #4f89c0;
+  border-radius: 5px;
+  padding: 3px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field_error{
+  font-size: 14px;
+  text-transform: capitalize;
+  color: red;
+  margin: 3px 0px 5px 0px;
+  text-align: start;
+  width: 300px;
+}
+
+.loader{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  border-right: 2px solid blue;
+  border-left: 2px solid blue;
+  border-top: 2px solid blue;
+  -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Signup CSS End */
+
+/* Dashboard CSS Start */
+
+.dashboard_main{
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Dashboard CSS End */
+
+/* Navbar CSS Start */
+
+.header{
+  width: 100vw;
+  height: 80px;
+  background: #28649c;
+  padding: 0px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar CSS End */
+
+/* ProfileSetting CSS Start */
+
+.profile_setting_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 150px;
+}
+
+#file-upload{
+  display: none;
+}
+
+.fileUploader{
+  width: 250px;
+  height: 300px;
+}
+
+.imageWrapper {
+  width: 250px;
+  height: 250px;
+  background: #F0F0F0;
+  border-radius: 100%;
+  object-fit: contain;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imageUpload{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.uploadHead{
+  font-family: "Poppins" !important;
+  color: #112B98;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  width: 250px;
+}
+
+.profile_setting_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile_save_btn{
+  background-color: #28649c !important;
+}
+
+.mainHead{
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.profile_save_btn:hover {
+  background-color: #4f89c0 !important;
+}
+
+.gender_fields{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gender_container{
+  margin-top: 10px;
+}
+
+.profile_upload_loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid blue;
+  border-right: 12px solid green;
+  border-bottom: 12px solid red;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spinUploader 2s linear infinite;
+  animation: spinUploader 2s linear infinite;
+}
+
+@-webkit-keyframes spinUploader {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinUploader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* ProfileSetting CSS End */
+
+
+/* Custome Image Uploader CSS Start */
+
+input[type="file"] {
+  display: none;
+}
+
+/* Custome Image Uploader CSS End */
